@@ -16,7 +16,7 @@ if not torch.cuda.is_available():
 
 model = Model()
 
-with gr.Blocks(css="style.css") as demo:
+with gr.Blocks(css_paths="style.css") as demo:
     gr.Markdown(DESCRIPTION)
     gr.DuplicateButton(
         value="Duplicate Space for private use",

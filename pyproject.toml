@@ -1,0 +1,17 @@
+[project]
+name = "shap-e"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.0.0",
+    "diffusers>=0.30.3",
+    "gradio-client>=1.4.0b5",
+    "gradio==5.0.0b10",
+    "spaces>=0.30.3",
+    "torch==2.4.0",
+    "torchvision>=0.19.0",
+    "transformers>=4.45.2",
+    "trimesh>=4.4.9",
+]
