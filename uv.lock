@@ -7,9 +7,6 @@ resolution-markers = [
     "python_full_version >= '3.13'",
 ]
 
-[options]
-prerelease-mode = "allow"
-
 [[package]]
 name = "accelerate"
 version = "1.0.0"
@@ -231,7 +228,7 @@ wheels = [
 
 [[package]]
 name = "gradio"
-version = "5.0.0b10"
+version = "5.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
@@ -260,14 +257,14 @@ dependencies = [
     { name = "urllib3", marker = "sys_platform == 'emscripten'" },
     { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/83/66/55a5db6f3843f7973744967a0d89a843b880aab918754a27605eacca3189/gradio-5.0.0b10.tar.gz", hash = "sha256:d467517ff215cd7bb0974a5d8b19b393d650012efa0cf2a6cf88d8324d005a73", size = 52554519 }
+sdist = { url = "https://files.pythonhosted.org/packages/70/8f/05c336a7662f77ad7c9b44aaa98933b301b511ea7b95f66273d056d851ae/gradio-5.0.0.tar.gz", hash = "sha256:e2b45eeabb9edd04bbe0031d418ca3b04bcc545a4c1a85507312e86e296b5997", size = 52292186 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/cc/5b/808d35efe04a0b93e671748b891f3c3941015ae44dae883c35c3ac76ca3a/gradio-5.0.0b10-py3-none-any.whl", hash = "sha256:2e74e45ffa42c0134eb7d654d831ceeb933d47126bd4020c0d313ecc50e31af9", size = 42307447 },
+    { url = "https://files.pythonhosted.org/packages/97/1e/e5f425993927580fa3f42dbcba0711954a907550132e7a2bc9467151b225/gradio-5.0.0-py3-none-any.whl", hash = "sha256:e5b499edbcb5da80cd57d94bf3f66363a400999bab4073e28a89ff6421a1e13a", size = 42308320 },
 ]
 
 [[package]]
 name = "gradio-client"
-version = "1.4.0b5"
+version = "1.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fsspec" },
@@ -277,9 +274,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0b/2b/8ffbf414f5690a64bb0c91466617a9061e3126ba223c00ad090f997745c1/gradio_client-1.4.0b5.tar.gz", hash = "sha256:6b75619487eaeadeebb543ba16cb1e144ff6c0b710d4bd06b8847db949b82a14", size = 317808 }
+sdist = { url = "https://files.pythonhosted.org/packages/a0/32/6225437199f88f20a8f36ad78681d9fc5be8cdf7519cbc852782ae379edb/gradio_client-1.4.0.tar.gz", hash = "sha256:bb24af01176774122f0c35e9a18f51047a22b457e6d667ba3cd7c7dfae17cd8d", size = 317874 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8f/97/3f79d5cdd578ed3ea61a696c3e8c3c413536d92de1f1ba47f025d21468cf/gradio_client-1.4.0b5-py3-none-any.whl", hash = "sha256:b6f878d34d58eb3427aa0b8b0bfdd55680e03798346fff99d902f893870ff5a8", size = 319723 },
+    { url = "https://files.pythonhosted.org/packages/25/05/8a55d7fc95792b58aef5ac2656ee6f8307629ddca747a5bfdfd8197c7114/gradio_client-1.4.0-py3-none-any.whl", hash = "sha256:6cd0f2c7b83fbab1db904e577c19bccc518dc7a2e8ea02cf3e13f8a9510d83f7", size = 319789 },
 ]
 
 [[package]]
@@ -441,11 +438,11 @@ wheels = [
 
 [[package]]
 name = "networkx"
-version = "3.4rc0"
+version = "3.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e2/3b/0e2d8974b340fee65c0d64cfab53bd43a85854d471edfb2a6a821970956e/networkx-3.4rc0.tar.gz", hash = "sha256:1dab69c9a51be024bed1dbaa76bee9b23a3b7a06d0b874bcd3cd1c5568c218d4", size = 2146054 }
+sdist = { url = "https://files.pythonhosted.org/packages/04/e6/b164f94c869d6b2c605b5128b7b0cfe912795a87fc90e78533920001f3ec/networkx-3.3.tar.gz", hash = "sha256:0c127d8b2f4865f59ae9cb8aafcd60b5c70f3241ebd66f7defad7c4ab90126c9", size = 2126579 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/39/d5/1b381a4413a89801866bc78cca4620e0cf8712c552ddca10feb6516c45b2/networkx-3.4rc0-py3-none-any.whl", hash = "sha256:04929e3f0ac955f1e7bbbcb043f29e8fef66eba752afdb0560a18c671f0eb78b", size = 1718537 },
+    { url = "https://files.pythonhosted.org/packages/38/e9/5f72929373e1a0e8d142a130f3f97e6ff920070f87f91c4e13e40e0fba5a/networkx-3.3-py3-none-any.whl", hash = "sha256:28575580c6ebdaf4505b22c6256a2b9de86b316dc63ba9e93abde3d78dfdbcf2", size = 1702396 },
 ]
 
 [[package]]
@@ -1139,7 +1136,6 @@ dependencies = [
     { name = "accelerate" },
     { name = "diffusers" },
     { name = "gradio" },
-    { name = "gradio-client" },
     { name = "spaces" },
     { name = "torch" },
     { name = "torchvision" },
@@ -1151,8 +1147,7 @@ dependencies = [
 requires-dist = [
     { name = "accelerate", specifier = ">=1.0.0" },
     { name = "diffusers", specifier = ">=0.30.3" },
-    { name = "gradio", specifier = "==5.0.0b10" },
-    { name = "gradio-client", specifier = ">=1.4.0b5" },
+    { name = "gradio", specifier = "==5.0.0" },
     { name = "spaces", specifier = ">=0.30.3" },
     { name = "torch", specifier = "==2.4.0" },
     { name = "torchvision", specifier = ">=0.19.0" },
@@ -1408,7 +1403,7 @@ name = "triton"
 version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "filelock", marker = "python_full_version < '3.13'" },
+    { name = "filelock" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/45/27/14cc3101409b9b4b9241d2ba7deaa93535a217a211c86c4cc7151fb12181/triton-3.0.0-1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:e1efef76935b2febc365bfadf74bcb65a6f959a9872e5bddf44cc9e0adce1e1a", size = 209376304 },
