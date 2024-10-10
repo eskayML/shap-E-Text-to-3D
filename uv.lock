@@ -228,7 +228,7 @@ wheels = [
 
 [[package]]
 name = "gradio"
-version = "5.0.0"
+version = "5.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
@@ -257,9 +257,9 @@ dependencies = [
     { name = "urllib3", marker = "sys_platform == 'emscripten'" },
     { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/70/8f/05c336a7662f77ad7c9b44aaa98933b301b511ea7b95f66273d056d851ae/gradio-5.0.0.tar.gz", hash = "sha256:e2b45eeabb9edd04bbe0031d418ca3b04bcc545a4c1a85507312e86e296b5997", size = 52292186 }
+sdist = { url = "https://files.pythonhosted.org/packages/bd/e0/b2316f632c3929969393c99d7c25c4879e0e93ce6b441b7a9ce559579a06/gradio-5.0.1.tar.gz", hash = "sha256:fb05b2286eda447d9750864049bf1af8f6d835137629c41735ab2d24c4cf7cca", size = 51971207 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/97/1e/e5f425993927580fa3f42dbcba0711954a907550132e7a2bc9467151b225/gradio-5.0.0-py3-none-any.whl", hash = "sha256:e5b499edbcb5da80cd57d94bf3f66363a400999bab4073e28a89ff6421a1e13a", size = 42308320 },
+    { url = "https://files.pythonhosted.org/packages/aa/c0/9b5a96b27afd50afcbdcc5b9d563c66a6b2ff33c9a4ec88ca4f7da331d98/gradio-5.0.1-py3-none-any.whl", hash = "sha256:db731c154372599760ba55cc885872da8fee6029cc2cf16099e1471840dbede4", size = 42307377 },
 ]
 
 [[package]]
@@ -1147,7 +1147,7 @@ dependencies = [
 requires-dist = [
     { name = "accelerate", specifier = ">=1.0.0" },
     { name = "diffusers", specifier = ">=0.30.3" },
-    { name = "gradio", specifier = "==5.0.0" },
+    { name = "gradio", specifier = "==5.0.1" },
     { name = "spaces", specifier = ">=0.30.3" },
     { name = "torch", specifier = "==2.4.0" },
     { name = "torchvision", specifier = ">=0.19.0" },
@@ -1403,7 +1403,7 @@ name = "triton"
 version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "filelock" },
+    { name = "filelock", marker = "python_full_version < '3.13'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/45/27/14cc3101409b9b4b9241d2ba7deaa93535a217a211c86c4cc7151fb12181/triton-3.0.0-1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:e1efef76935b2febc365bfadf74bcb65a6f959a9872e5bddf44cc9e0adce1e1a", size = 209376304 },
