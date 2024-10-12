@@ -37,9 +37,8 @@ def create_demo(model: Model) -> gr.Blocks:
                     show_label=False,
                     max_lines=1,
                     placeholder="Enter your prompt",
-                    container=False,
+                    submit_btn=True,
                 )
-                run_button = gr.Button("Run", scale=0)
             result = gr.Model3D(label="Result", show_label=False)
             with gr.Accordion("Advanced options", open=False):
                 seed = gr.Slider(
@@ -74,8 +73,7 @@ def create_demo(model: Model) -> gr.Blocks:
             cache_mode="lazy",
         )
 
-        gr.on(
-            triggers=[prompt.submit, run_button.click],
+        prompt.submit(
             fn=randomize_seed_fn,
             inputs=[seed, randomize_seed],
             outputs=seed,
