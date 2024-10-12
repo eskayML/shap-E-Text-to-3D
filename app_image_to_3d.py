@@ -64,8 +64,6 @@ def create_demo(model: Model) -> gr.Blocks:
             inputs=image,
             outputs=result,
             fn=process_example_fn,
-            cache_examples=True,
-            cache_mode="lazy",
         )
 
         run_button.click(

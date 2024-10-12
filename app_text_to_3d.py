@@ -69,8 +69,6 @@ def create_demo(model: Model) -> gr.Blocks:
             inputs=prompt,
             outputs=result,
             fn=process_example_fn,
-            cache_examples=True,
-            cache_mode="lazy",
         )
 
         prompt.submit(
