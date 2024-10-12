@@ -1,4 +1,4 @@
-gradio_cached_examples/
+.gradio/
 shap_e_model_cache/
 corgi.png
 

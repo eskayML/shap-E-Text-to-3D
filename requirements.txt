@@ -42,7 +42,7 @@ fsspec==2024.9.0
     #   gradio-client
     #   huggingface-hub
     #   torch
-gradio==5.0.1
+gradio==5.0.2
     # via
     #   shap-e (pyproject.toml)
     #   spaces
