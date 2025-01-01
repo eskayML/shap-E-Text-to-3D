@@ -52,6 +52,8 @@ h11==0.14.0
     # via
     #   httpcore
     #   uvicorn
+hf-transfer==0.1.8
+    # via shap-e (pyproject.toml)
 httpcore==1.0.7
     # via httpx
 httpx==0.28.1
