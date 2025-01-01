@@ -15,10 +15,11 @@ from utils import randomize_seed_fn
 
 def create_demo(model: Model) -> gr.Blocks:
     if not pathlib.Path("corgi.png").exists():
-        subprocess.run(
+        subprocess.run(  # noqa: S603
             shlex.split(
                 "wget https://raw.githubusercontent.com/openai/shap-e/d99cedaea18e0989e340163dbaeb4b109fa9e8ec/shap_e/examples/example_data/corgi.png -O corgi.png"
-            )
+            ),
+            check=True,
         )
     examples = ["corgi.png"]
 
