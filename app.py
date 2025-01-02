@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import os
-
 import gradio as gr
 import torch
 
@@ -18,11 +16,6 @@ model = Model()
 
 with gr.Blocks(css_paths="style.css") as demo:
     gr.Markdown(DESCRIPTION)
-    gr.DuplicateButton(
-        value="Duplicate Space for private use",
-        elem_id="duplicate-button",
-        visible=os.getenv("SHOW_DUPLICATE_BUTTON") == "1",
-    )
     with gr.Tabs():
         with gr.Tab(label="Text to 3D"):
             create_demo_text_to_3d(model)
