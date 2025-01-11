@@ -13,9 +13,5 @@
         "files.insertFinalNewline": false
     },
     "notebook.output.scrolling": true,
-    "notebook.formatOnCellExecution": true,
-    "notebook.formatOnSave.enabled": true,
-    "notebook.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-    }
+    "notebook.formatOnSave.enabled": true
 }
