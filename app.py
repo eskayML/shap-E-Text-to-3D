@@ -7,7 +7,12 @@ from app_image_to_3d import create_demo as create_demo_image_to_3d
 from app_text_to_3d import create_demo as create_demo_text_to_3d
 from model import Model
 
-DESCRIPTION = "# [Shap-E](https://github.com/openai/shap-e)"
+DESCRIPTION = """
+![nosana banner](https://gcdnb.pbrd.co/images/0juVIv58VlRy.png)
+# Nosana 3D Generation Demo
+[Link to model](https://github.com/openai/shap-e)
+
+"""
 
 if not torch.cuda.is_available():
     DESCRIPTION += "\n<p>Running on CPU 🥶 This demo does not work on CPU.</p>"
