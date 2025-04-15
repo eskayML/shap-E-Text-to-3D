@@ -14,19 +14,6 @@ from utils import randomize_seed_fn
 
 
 def create_demo(model: Model) -> gr.Blocks:
-    if not pathlib.Path("corgi.png").exists():
-        subprocess.run(  # noqa: S603
-            shlex.split(
-                "wget https://raw.githubusercontent.com/openai/shap-e/d99cedaea18e0989e340163dbaeb4b109fa9e8ec/shap_e/examples/example_data/corgi.png -O corgi.png"
-            ),
-            check=True,
-        )
-    examples = ["corgi.png"]
-
-    @spaces.GPU
-    def process_example_fn(image_path: str) -> str:
-        return model.run_image(image_path)
-
     @spaces.GPU
     def run(image: PIL.Image.Image, seed: int, guidance_scale: float, num_inference_steps: int) -> str:
         return model.run_image(image, seed, guidance_scale, num_inference_steps)
@@ -59,13 +46,6 @@ def create_demo(model: Model) -> gr.Blocks:
                     step=1,
                     value=64,
                 )
-
-        gr.Examples(
-            examples=examples,
-            inputs=image,
-            outputs=result,
-            fn=process_example_fn,
-        )
 
         run_button.click(
             fn=randomize_seed_fn,
